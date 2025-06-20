@@ -1,0 +1,112 @@
+body {
+  font-family: 'UnifrakturCook', 'Cinzel Decorative', serif;
+  background: #f4efe6 url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+  color: #3e2723;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #7c5e3c;
+  color: #fffbe6;
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  border-bottom: 6px solid #bfa76a;
+  box-shadow: 0 4px 12px rgba(60, 40, 10, 0.2);
+}
+
+h1 {
+  font-family: 'UnifrakturCook', 'Cinzel Decorative', serif;
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 2px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #fffbe6;
+  border: 3px solid #bfa76a;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(60, 40, 10, 0.15);
+  width: 260px;
+  min-height: 120px;
+  padding: 1.5rem 1rem;
+  font-size: 1.15rem;
+  font-family: 'Cinzel Decorative', serif;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.card:before {
+  content: "\2721";
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 1.5rem;
+  color: #bfa76a;
+}
+
+.card:after {
+  content: "\2721";
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  font-size: 1.5rem;
+  color: #bfa76a;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 12px 32px rgba(60, 40, 10, 0.25);
+}
+
+#refresh-btn {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  background: #bfa76a;
+  color: #3e2723;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Cinzel Decorative', serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(60, 40, 10, 0.12);
+  transition: background 0.2s;
+}
+
+#refresh-btn:hover {
+  background: #7c5e3c;
+  color: #fffbe6;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #7c5e3c;
+  color: #fffbe6;
+  margin-top: auto;
+  border-top: 4px solid #bfa76a;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90vw;
+    min-width: 0;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=UnifrakturCook:wght@700&display=swap');
