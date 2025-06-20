@@ -44,24 +44,28 @@ h1 {
   font-family: 'Cinzel Decorative', serif;
   position: relative;
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.card:before {
-  content: "\2721";
-  position: absolute;
-  top: 10px;
-  left: 16px;
-  font-size: 1.5rem;
-  color: #bfa76a;
+.card:before, .card:after {
+  display: none;
 }
 
-.card:after {
-  content: "\2721";
-  position: absolute;
-  bottom: 10px;
-  right: 16px;
-  font-size: 1.5rem;
-  color: #bfa76a;
+.emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tip-text {
+  display: block;
+  font-size: 1.15rem;
+  font-family: 'Cinzel Decorative', serif;
+  margin-top: 0.2rem;
 }
 
 .card:hover {
